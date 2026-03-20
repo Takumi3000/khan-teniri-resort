@@ -1,0 +1,1 @@
+# khan-teniri-resort
