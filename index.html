@@ -82,24 +82,31 @@ display:block;
 margin-top:2px;
 }
 
-/* CAROUSEL */
-.carousel{
-margin-top:20px;
-width:100%;
-overflow:hidden;
-border-radius:20px;
-box-shadow:0 15px 40px rgba(0,0,0,0.35);
-background:#000;
+/* ОБНОВЛЕННАЯ КАРУСЕЛЬ */
+.carousel {
+    margin-top: 20px;
+    width: 100%;
+    height: 250px; /* ФИКСИРОВАННАЯ ВЫСОТА — сайт больше не дергается */
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+    background: #000; /* Черный фон для пустых мест, если фото узкое */
+    position: relative;
 }
 
-.carousel img{
-width:100%;
-height:auto;
-display:none;
+.carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Изначально все фото прозрачные */
+    transition: opacity 0.8s ease-in-out; /* Плавное появление за 0.8 сек */
+    object-fit: contain; /* ФОТО СОХРАНЯЕТ ПРОПОРЦИИ и вписывается в блок */
 }
 
-.carousel img.active{
-display:block;
+.carousel img.active {
+    opacity: 1; /* Показываем только активное фото */
 }
 
 </style>
@@ -170,12 +177,11 @@ YouTube
 const slides = document.querySelectorAll('.carousel img');
 let index = 0;
 
-// Увеличили время до 5000мс (5 секунд)
-setInterval(()=>{
-slides[index].classList.remove('active');
-index = (index + 1) % slides.length;
-slides[index].classList.add('active');
-}, 5000);
+setInterval(() => {
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+}, 5000); // Перелистывание каждые 5 секунд
 </script>
 
 </body>
