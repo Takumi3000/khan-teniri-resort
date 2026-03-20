@@ -12,14 +12,14 @@ body{
 background:url("bg.jpeg") center/cover no-repeat fixed;
 display:flex;
 justify-content:center;
-align-items:center;
-min-height:100vh;
+align-items:flex-start;
+padding:30px 10px;
 }
 
 .container{
 width:100%;
 max-width:420px;
-background:rgba(255,255,255,0.95);
+background:rgba(255,255,255,0.96);
 backdrop-filter:blur(6px);
 border-radius:30px;
 padding:25px 20px 30px;
@@ -27,23 +27,65 @@ box-shadow:0 10px 40px rgba(0,0,0,0.25);
 text-align:center;
 }
 
-/* HEADER */
-.header{
-background:linear-gradient(180deg,#63d38a,#53c57d);
-border-radius:25px;
-padding:25px 10px 140px;
-margin-bottom:120px;
-position:relative;
+/* LOGO */
+.logo{
+width:110px;
+margin:0 auto 15px;
+display:block;
 }
 
-/* BIG CAROUSEL */
+.title{
+font-size:28px;
+font-weight:700;
+margin-bottom:5px;
+}
+
+.subtitle{
+color:#777;
+margin-bottom:25px;
+}
+
+/* BUTTONS */
+.btn{
+display:flex;
+align-items:center;
+padding:16px 18px;
+margin-bottom:15px;
+border-radius:15px;
+text-decoration:none;
+color:white;
+font-weight:600;
+font-size:17px;
+transition:0.25s;
+}
+
+.btn:hover{transform:scale(1.02)}
+
+.instagram{background:#5e9ea7}
+.whatsapp{background:#5e9ea7}
+.youtube{background:#5e9ea7}
+
+.icon{
+width:36px;
+height:36px;
+margin-right:14px;
+}
+
+.btn-text{
+text-align:left;
+}
+
+.btn-text span{
+font-weight:400;
+font-size:14px;
+display:block;
+margin-top:2px;
+}
+
+/* CAROUSEL (теперь внизу) */
 .carousel{
-position:absolute;
-left:50%;
-bottom:-120px;
-transform:translateX(-50%);
+margin-top:20px;
 width:100%;
-max-width:360px;
 overflow:hidden;
 border-radius:20px;
 box-shadow:0 15px 40px rgba(0,0,0,0.35);
@@ -60,139 +102,68 @@ display:none;
 display:block;
 }
 
-/* TITLE */
-.title{
-margin-top:10px;
-font-size:30px;
-font-weight:700;
-letter-spacing:1px;
-}
-
-.subtitle{
-color:#777;
-margin-bottom:25px;
-}
-
-/* BUTTONS */
-.btn{
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:16px 18px;
-margin-bottom:15px;
-border-radius:15px;
-text-decoration:none;
-color:white;
-font-weight:600;
-font-size:17px;
-transition:0.25s;
-}
-
-.btn:hover{transform:scale(1.03)}
-
-.instagram{background:#5e9ea7}
-.whatsapp{background:#5e9ea7}
-.youtube{background:#5e9ea7}
-
-.left{
-display:flex;
-align-items:center;
-gap:14px;
-}
-
-.icon{
-width:40px;
-height:40px;
-border-radius:50%;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:20px;
-}
-
-.icon.instagram{background:#ff3d77}
-.icon.whatsapp{background:#2cc66a}
-.icon.youtube{background:#ff3d3d}
-
-.arrow{
-font-size:20px;
-opacity:0.8;
-}
-
 </style>
 </head>
 <body>
 
 <div class="container">
 
-<div class="header">
-
-<div class="carousel">
-
-<img src="photo1.jpeg" class="active">
-<img src="photo2.jpeg">
-<img src="photo3.jpeg">
-<img src="photo4.jpeg">
-<img src="photo5.jpeg">
-<img src="photo6.jpeg">
-<img src="photo7.jpeg">
-<img src="photo8.jpeg">
-<img src="photo9.jpeg">
-<img src="photo10.jpeg">
-<img src="photo11.jpeg">
-<img src="photo12.jpeg">
-<img src="photo13.jpeg">
-<img src="photo14.jpeg">
-<img src="photo15.jpeg">
-<img src="photo16.jpeg">
-<img src="photo17.jpeg">
-<img src="photo18.jpeg">
-<img src="photo19.jpeg">
-<img src="photo20.jpeg">
-<img src="photo21.jpeg">
-<img src="photo22.jpeg">
-<img src="photo23.jpeg">
-<img src="photo24.jpeg">
-
-</div>
-
-</div>
+<img src="Logo.png" class="logo">
 
 <h1 class="title">ХАН‑ТЕНИРИ</h1>
 <p class="subtitle">Центр отдыха</p>
 
 <a class="btn instagram" href="https://www.instagram.com/khanteniri.resort/" target="_blank">
-<div class="left">
-<div class="icon instagram">📷</div>
-<div>
-Instagram<br>
-<span style="font-weight:400;font-size:14px">@khanteniri.resort</span>
+<img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+<div class="btn-text">
+Instagram
+<span>@khanteniri.resort</span>
 </div>
-</div>
-<div class="arrow">›</div>
 </a>
 
 <a class="btn whatsapp" href="https://wa.me/message/WNNIHOKQZY5GJ1" target="_blank">
-<div class="left">
-<div class="icon whatsapp">💬</div>
-<div>
-WhatsApp<br>
-<span style="font-weight:400;font-size:14px">Написать в WhatsApp</span>
+<img class="icon" src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+<div class="btn-text">
+WhatsApp
+<span>Написать сообщение</span>
 </div>
-</div>
-<div class="arrow">›</div>
 </a>
 
 <a class="btn youtube" href="https://www.youtube.com/@khanteniri.resort" target="_blank">
-<div class="left">
-<div class="icon youtube">▶</div>
-<div>
-YouTube<br>
-<span style="font-weight:400;font-size:14px">khanteniri.resort</span>
+<img class="icon" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
+<div class="btn-text">
+YouTube
+<span>khanteniri.resort</span>
 </div>
-</div>
-<div class="arrow">›</div>
 </a>
+
+<!-- КАРУСЕЛЬ ТЕПЕРЬ ВНИЗУ -->
+<div class="carousel">
+<img src="photo1.jpeg" class="active" loading="lazy">
+<img src="photo2.jpeg" loading="lazy">
+<img src="photo3.jpeg" loading="lazy">
+<img src="photo4.jpeg" loading="lazy">
+<img src="photo5.jpeg" loading="lazy">
+<img src="photo6.jpeg" loading="lazy">
+<img src="photo7.jpeg" loading="lazy">
+<img src="photo8.jpeg" loading="lazy">
+<img src="photo9.jpeg" loading="lazy">
+<img src="photo10.jpeg" loading="lazy">
+<img src="photo11.jpeg" loading="lazy">
+<img src="photo12.jpeg" loading="lazy">
+<img src="photo13.jpeg" loading="lazy">
+<img src="photo14.jpeg" loading="lazy">
+<img src="photo15.jpeg" loading="lazy">
+<img src="photo16.jpeg" loading="lazy">
+<img src="photo17.jpeg" loading="lazy">
+<img src="photo18.jpeg" loading="lazy">
+<img src="photo19.jpeg" loading="lazy">
+<img src="photo20.jpeg" loading="lazy">
+<img src="photo21.jpeg" loading="lazy">
+<img src="photo22.jpeg" loading="lazy">
+<img src="photo23.jpeg" loading="lazy">
+<img src="photo24.jpeg" loading="lazy">
+</div>
 
 </div>
 
@@ -204,7 +175,7 @@ setInterval(()=>{
 slides[index].classList.remove('active');
 index = (index + 1) % slides.length;
 slides[index].classList.add('active');
-},2500);
+},2000);
 </script>
 
 </body>
