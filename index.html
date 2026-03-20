@@ -7,8 +7,9 @@
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0;font-family:Arial, Helvetica, sans-serif}
+
 body{
-background:#f2f2f2;
+background:url("bg.jpeg") center/cover no-repeat fixed;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -17,11 +18,12 @@ min-height:100vh;
 
 .container{
 width:100%;
-max-width:380px;
-background:white;
+max-width:420px;
+background:rgba(255,255,255,0.95);
+backdrop-filter:blur(6px);
 border-radius:30px;
 padding:25px 20px 30px;
-box-shadow:0 10px 40px rgba(0,0,0,0.15);
+box-shadow:0 10px 40px rgba(0,0,0,0.25);
 text-align:center;
 }
 
@@ -29,42 +31,39 @@ text-align:center;
 .header{
 background:linear-gradient(180deg,#63d38a,#53c57d);
 border-radius:25px;
-padding:25px 10px 90px;
-margin-bottom:90px;
+padding:25px 10px 140px;
+margin-bottom:120px;
 position:relative;
 }
 
+/* BIG CAROUSEL */
 .carousel{
 position:absolute;
 left:50%;
-bottom:-80px;
+bottom:-120px;
 transform:translateX(-50%);
-width:280px;
-height:180px;
+width:100%;
+max-width:360px;
 overflow:hidden;
-border-radius:18px;
-box-shadow:0 10px 30px rgba(0,0,0,0.25);
+border-radius:20px;
+box-shadow:0 15px 40px rgba(0,0,0,0.35);
+background:#000;
 }
 
 .carousel img{
 width:100%;
-height:100%;
-object-fit:cover;
-position:absolute;
-left:0;
-top:0;
-opacity:0;
-transition:opacity 0.5s ease;
+height:auto;
+display:none;
 }
 
 .carousel img.active{
-opacity:1;
+display:block;
 }
 
 /* TITLE */
 .title{
 margin-top:10px;
-font-size:28px;
+font-size:30px;
 font-weight:700;
 letter-spacing:1px;
 }
@@ -129,10 +128,32 @@ opacity:0.8;
 <div class="header">
 
 <div class="carousel">
+
 <img src="photo1.jpeg" class="active">
 <img src="photo2.jpeg">
 <img src="photo3.jpeg">
 <img src="photo4.jpeg">
+<img src="photo5.jpeg">
+<img src="photo6.jpeg">
+<img src="photo7.jpeg">
+<img src="photo8.jpeg">
+<img src="photo9.jpeg">
+<img src="photo10.jpeg">
+<img src="photo11.jpeg">
+<img src="photo12.jpeg">
+<img src="photo13.jpeg">
+<img src="photo14.jpeg">
+<img src="photo15.jpeg">
+<img src="photo16.jpeg">
+<img src="photo17.jpeg">
+<img src="photo18.jpeg">
+<img src="photo19.jpeg">
+<img src="photo20.jpeg">
+<img src="photo21.jpeg">
+<img src="photo22.jpeg">
+<img src="photo23.jpeg">
+<img src="photo24.jpeg">
+
 </div>
 
 </div>
@@ -183,7 +204,7 @@ setInterval(()=>{
 slides[index].classList.remove('active');
 index = (index + 1) % slides.length;
 slides[index].classList.add('active');
-},3000);
+},2500);
 </script>
 
 </body>
