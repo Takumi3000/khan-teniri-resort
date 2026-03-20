@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ХАН-ТЕҢИРИ — Центр отдыха</title>
+<title>Хан‑Теңири — Центр отдыха</title>
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0;font-family:Arial, Helvetica, sans-serif}
@@ -82,7 +82,7 @@ display:block;
 margin-top:2px;
 }
 
-/* CAROUSEL (теперь внизу) */
+/* CAROUSEL */
 .carousel{
 margin-top:20px;
 width:100%;
@@ -110,7 +110,7 @@ display:block;
 
 <img src="Logo.png" class="logo">
 
-<h1 class="title">ХАН-ТЕҢИРИ</h1>
+<h1 class="title">ХАН‑ТЕҢИРИ</h1>
 <p class="subtitle">Центр отдыха</p>
 
 <a class="btn instagram" href="https://www.instagram.com/khanteniri.resort/" target="_blank">
@@ -137,32 +137,31 @@ YouTube
 </div>
 </a>
 
-<!-- КАРУСЕЛЬ ТЕПЕРЬ ВНИЗУ -->
 <div class="carousel">
-<img src="photo1.jpeg" class="active" loading="lazy">
-<img src="photo2.jpeg" loading="lazy">
-<img src="photo3.jpeg" loading="lazy">
-<img src="photo4.jpeg" loading="lazy">
-<img src="photo5.jpeg" loading="lazy">
-<img src="photo6.jpeg" loading="lazy">
-<img src="photo7.jpeg" loading="lazy">
-<img src="photo8.jpeg" loading="lazy">
-<img src="photo9.jpeg" loading="lazy">
-<img src="photo10.jpeg" loading="lazy">
-<img src="photo11.jpeg" loading="lazy">
-<img src="photo12.jpeg" loading="lazy">
-<img src="photo13.jpeg" loading="lazy">
-<img src="photo14.jpeg" loading="lazy">
-<img src="photo15.jpeg" loading="lazy">
-<img src="photo16.jpeg" loading="lazy">
-<img src="photo17.jpeg" loading="lazy">
-<img src="photo18.jpeg" loading="lazy">
-<img src="photo19.jpeg" loading="lazy">
-<img src="photo20.jpeg" loading="lazy">
-<img src="photo21.jpeg" loading="lazy">
-<img src="photo22.jpeg" loading="lazy">
-<img src="photo23.jpeg" loading="lazy">
-<img src="photo24.jpeg" loading="lazy">
+<img src="photo1.jpg" class="active" loading="lazy">
+<img src="photo2.jpg" loading="lazy">
+<img src="photo3.jpg" loading="lazy">
+<img src="photo4.jpg" loading="lazy">
+<img src="photo5.jpg" loading="lazy">
+<img src="photo6.jpg" loading="lazy">
+<img src="photo7.jpg" loading="lazy">
+<img src="photo8.jpg" loading="lazy">
+<img src="photo9.jpg" loading="lazy">
+<img src="photo10.jpg" loading="lazy">
+<img src="photo11.jpg" loading="lazy">
+<img src="photo12.jpg" loading="lazy">
+<img src="photo13.jpg" loading="lazy">
+<img src="photo14.jpg" loading="lazy">
+<img src="photo15.jpg" loading="lazy">
+<img src="photo16.jpg" loading="lazy">
+<img src="photo17.jpg" loading="lazy">
+<img src="photo18.jpg" loading="lazy">
+<img src="photo19.jpg" loading="lazy">
+<img src="photo20.jpg" loading="lazy">
+<img src="photo21.jpg" loading="lazy">
+<img src="photo22.jpg" loading="lazy">
+<img src="photo23.jpg" loading="lazy">
+<img src="photo24.jpg" loading="lazy">
 </div>
 
 </div>
@@ -171,11 +170,12 @@ YouTube
 const slides = document.querySelectorAll('.carousel img');
 let index = 0;
 
+// Увеличили время до 5000мс (5 секунд)
 setInterval(()=>{
 slides[index].classList.remove('active');
 index = (index + 1) % slides.length;
 slides[index].classList.add('active');
-},2000);
+}, 5000);
 </script>
 
 </body>
