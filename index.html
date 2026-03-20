@@ -46,6 +46,14 @@ color:#777;
 margin-bottom:25px;
 }
 
+/* SECTION TITLE */
+.section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 25px 0 15px;
+    color: #333;
+}
+
 /* BUTTONS */
 .btn{
 display:flex;
@@ -85,13 +93,13 @@ margin-top:2px;
 
 /* CAROUSEL */
 .carousel {
-    margin-top: 20px;
+    margin-top: 10px;
     width: 100%;
     height: 250px;
     overflow: hidden;
     border-radius: 20px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.35);
-    background: transparent;
+    background: #f0f0f0;
     position: relative;
 }
 
@@ -172,17 +180,32 @@ YouTube
 <img src="photo24.jpg" loading="lazy">
 </div>
 
+<h2 class="section-title">Стильные Барнхаусы для отдыха</h2>
+<div class="carousel">
+<img src="photo_b1.jpg" class="active" loading="lazy">
+<img src="photo_b2.jpg" loading="lazy">
+<img src="photo_b3.jpg" loading="lazy">
+<img src="photo_b4.jpg" loading="lazy">
+<img src="photo_b5.jpg" loading="lazy">
+</div>
+
 </div>
 
 <script>
-const slides = document.querySelectorAll('.carousel img');
-let index = 0;
+// Находим все блоки каруселей на странице
+const carousels = document.querySelectorAll('.carousel');
 
-setInterval(() => {
-    slides[index].classList.remove('active');
-    index = (index + 1) % slides.length;
-    slides[index].classList.add('active');
-}, 5000);
+carousels.forEach(carousel => {
+    const slides = carousel.querySelectorAll('img');
+    let index = 0;
+
+    // Запускаем интервал отдельно для каждой карусели
+    setInterval(() => {
+        slides[index].classList.remove('active');
+        index = (index + 1) % slides.length;
+        slides[index].classList.add('active');
+    }, 5000);
+});
 </script>
 
 </body>
