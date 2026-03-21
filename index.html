@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!DOCTYPE html><html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Хан‑Теңири — Центр отдыха</title>
-
-<style>
+<title>Хан‑Теңири — Центр отдыха</title><!-- Метаданные чтобы сайт не выглядел как фишинг --><meta name="description" content="Центр отдыха Хан-Теңири в горах Кыргызстана. Гостевые домики, барнхаусы, баня и отдых круглый год.">
+<meta name="author" content="Khanteniri Resort"><style>
 *{box-sizing:border-box;margin:0;padding:0;font-family:Arial, Helvetica, sans-serif}
 
 body{
@@ -45,6 +43,17 @@ text-transform: uppercase;
 color:#777;
 margin-bottom:25px;
 }
+
+/* ОПИСАНИЕ (это важно чтобы сайт не считался фишингом) */
+.about{
+text-align:left;
+font-size:15px;
+line-height:1.6;
+margin-bottom:25px;
+color:#333;
+}
+
+.about p{margin-bottom:10px}
 
 /* SECTION TITLE */
 .section-title {
@@ -118,41 +127,29 @@ margin-top:2px;
     opacity: 1;
 }
 
-</style>
-</head>
-<body>
-
-<div class="container">
-
-<img src="Logo.png" class="logo">
-
-<h1 class="title">ХАН‑ТЕҢИРИ</h1>
-<p class="subtitle">Центр отдыха</p>
-
-<a class="btn instagram" href="https://www.instagram.com/khanteniri.resort/" target="_blank">
-<img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+</style></head>
+<body><div class="container"><img src="Logo.png" class="logo"><h1 class="title">ХАН‑ТЕҢИРИ</h1>
+<p class="subtitle">Центр отдыха</p><!-- НОРМАЛЬНОЕ ТЕКСТОВОЕ ОПИСАНИЕ (важно для Google Safe Browsing) --><div class="about">
+<p><b>Хан‑Теңири</b> — это центр отдыха в горах Кыргызстана. У нас можно отдохнуть в стильных барнхаусах, снять домик на выходные и насладиться природой.</p><p>На территории есть уютные гостевые дома, баня, красивые виды на горы и отдых круглый год — летом и зимой.</p><p><b>Телефон:</b> +996 555 766 676</p>
+</div><!-- КНОПКИ СОЦСЕТЕЙ (теперь безопасные ссылки) --><a class="btn instagram" href="https://www.instagram.com/khanteniri.resort/" target="_blank">
+<img class="icon" src="instagram.png">
 <div class="btn-text">
 Instagram
 <span>@khanteniri.resort</span>
 </div>
-</a>
-
-<a class="btn whatsapp" href="https://wa.me/message/WNNIHOKQZY5GJ1" target="_blank">
-<img class="icon" src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+</a><a class="btn whatsapp" href="https://wa.me/996555766676" target="_blank">
+<img class="icon" src="whatsapp.png">
 <div class="btn-text">
 WhatsApp
 <span>Написать сообщение</span>
 </div>
-</a>
-
-<a class="btn youtube" href="https://www.youtube.com/@khanteniri.resort" target="_blank">
-<img class="icon" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
+</a><a class="btn youtube" href="https://www.youtube.com/@khanteniri.resort" target="_blank">
+<img class="icon" src="youtube.png">
 <div class="btn-text">
 YouTube
 <span>khanteniri.resort</span>
 </div>
-</a>
-
+</a><h2 class="section-title">Фото территории</h2>
 <div class="carousel">
 <img src="photo1.jpg" class="active" loading="lazy">
 <img src="photo2.jpg" loading="lazy">
@@ -178,9 +175,7 @@ YouTube
 <img src="photo22.jpg" loading="lazy">
 <img src="photo23.jpg" loading="lazy">
 <img src="photo24.jpg" loading="lazy">
-</div>
-
-<h2 class="section-title">Стильные Барнхаусы для отдыха</h2>
+</div><h2 class="section-title">Стильные Барнхаусы</h2>
 <div class="carousel">
 <img src="photo_b1.jpeg" class="active" loading="lazy">
 <img src="photo_b2.jpeg" loading="lazy">
@@ -200,26 +195,19 @@ YouTube
 <img src="photo_b16.jpeg" loading="lazy">
 <img src="photo_b17.jpeg" loading="lazy">
 <img src="photo_b18.jpeg" loading="lazy">
-</div>
-
-</div>
-
-<script>
-// Находим все блоки каруселей на странице
+</div></div><script>
+// несколько каруселей на одной странице
 const carousels = document.querySelectorAll('.carousel');
 
 carousels.forEach(carousel => {
     const slides = carousel.querySelectorAll('img');
     let index = 0;
 
-    // Запускаем интервал отдельно для каждой карусели
     setInterval(() => {
         slides[index].classList.remove('active');
         index = (index + 1) % slides.length;
         slides[index].classList.add('active');
     }, 5000);
 });
-</script>
-
-</body>
+</script></body>
 </html>
