@@ -97,10 +97,11 @@ display:block;
 margin-top:2px;
 }
 
-/* БЫСТРАЯ КАРУСЕЛЬ БЕЗ ТЯЖЕЛОЙ ПЕРЕЗАГРУЗКИ */
+/* СТАБИЛЬНАЯ КАРУСЕЛЬ (без съезжания окон) */
 .carousel{
 margin-top:10px;
 width:100%;
+height:auto;
 border-radius:20px;
 overflow:hidden;
 box-shadow:0 15px 40px rgba(0,0,0,0.35);
@@ -112,8 +113,8 @@ position:relative;
 width:100%;
 height:auto;
 position:absolute;
-left:0;
 top:0;
+left:0;
 opacity:0;
 transition:opacity 0.6s ease-in-out;
 }
