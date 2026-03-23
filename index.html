@@ -244,73 +244,7 @@ cursor:pointer;
 
 </div>
 
-</div>
-
-<h2 class="section-title">Фото территории</h2>
-<div class="carousel">
-<img src="photo1.jpg" class="active" loading="eager" decoding="async">
-<img src="photo2.jpg" loading="lazy" decoding="async">
-<img src="photo3.jpg" loading="lazy" decoding="async">
-<img src="photo4.jpg" loading="lazy" decoding="async">
-<img src="photo5.jpg" loading="lazy" decoding="async">
-<img src="photo6.jpg" loading="lazy" decoding="async">
-<img src="photo7.jpg" loading="lazy" decoding="async">
-<img src="photo8.jpg" loading="lazy" decoding="async">
-<img src="photo9.jpg" loading="lazy" decoding="async">
-<img src="photo10.jpg" loading="lazy" decoding="async">
-<img src="photo11.jpg" loading="lazy" decoding="async">
-<img src="photo12.jpg" loading="lazy" decoding="async">
-<img src="photo13.jpg" loading="lazy" decoding="async">
-<img src="photo14.jpg" loading="lazy" decoding="async">
-<img src="photo15.jpg" loading="lazy" decoding="async">
-<img src="photo16.jpg" loading="lazy" decoding="async">
-<img src="photo17.jpg" loading="lazy" decoding="async">
-<img src="photo18.jpg" loading="lazy" decoding="async">
-<img src="photo19.jpg" loading="lazy" decoding="async">
-<img src="photo20.jpg" loading="lazy" decoding="async">
-<img src="photo21.jpg" loading="lazy" decoding="async">
-<img src="photo22.jpg" loading="lazy" decoding="async">
-<img src="photo23.jpg" loading="lazy" decoding="async">
-<img src="photo24.jpg" loading="lazy" decoding="async">
-</div>
-
-<h2 class="section-title">Барнхаусы</h2>
-<div class="carousel">
-<img src="photo_b1.jpeg" class="active" loading="eager" decoding="async">
-<img src="photo_b2.jpeg" loading="lazy" decoding="async">
-<img src="photo_b3.jpeg" loading="lazy" decoding="async">
-<img src="photo_b4.jpeg" loading="lazy" decoding="async">
-<img src="photo_b5.jpeg" loading="lazy" decoding="async">
-<img src="photo_b6.jpeg" loading="lazy" decoding="async">
-<img src="photo_b7.jpeg" loading="lazy" decoding="async">
-<img src="photo_b8.jpeg" loading="lazy" decoding="async">
-<img src="photo_b9.jpeg" loading="lazy" decoding="async">
-<img src="photo_b10.jpeg" loading="lazy" decoding="async">
-<img src="photo_b11.jpeg" loading="lazy" decoding="async">
-<img src="photo_b12.jpeg" loading="lazy" decoding="async">
-<img src="photo_b13.jpeg" loading="lazy" decoding="async">
-<img src="photo_b14.jpeg" loading="lazy" decoding="async">
-<img src="photo_b15.jpeg" loading="lazy" decoding="async">
-<img src="photo_b16.jpeg" loading="lazy" decoding="async">
-<img src="photo_b17.jpeg" loading="lazy" decoding="async">
-<img src="photo_b18.jpeg" loading="lazy" decoding="async">
-</div>
-
-</div>
-
-<script>
-const carousels = document.querySelectorAll('.carousel');
-
-carousels.forEach(carousel => {
-    const slides = carousel.querySelectorAll('img');
-    let index = 0;
-
-    setInterval(() => {
-        slides[index].classList.remove('active');
-        index = (index + 1) % slides.length;
-        slides[index].classList.add('active');
-    }, 4000);
-});
+</div> </a><h2 class="section-title">Фото территории</h2> <div class="carousel"> <img src="photo1.jpg" class="active" loading="lazy"> <img src="photo2.jpg" loading="lazy"> <img src="photo3.jpg" loading="lazy"> <img src="photo4.jpg" loading="lazy"> <img src="photo5.jpg" loading="lazy"> <img src="photo6.jpg" loading="lazy"> <img src="photo7.jpg" loading="lazy"> <img src="photo8.jpg" loading="lazy"> <img src="photo9.jpg" loading="lazy"> <img src="photo10.jpg" loading="lazy"> <img src="photo11.jpg" loading="lazy"> <img src="photo12.jpg" loading="lazy"> <img src="photo13.jpg" loading="lazy"> <img src="photo14.jpg" loading="lazy"> <img src="photo15.jpg" loading="lazy"> <img src="photo16.jpg" loading="lazy"> <img src="photo17.jpg" loading="lazy"> <img src="photo18.jpg" loading="lazy"> <img src="photo19.jpg" loading="lazy"> <img src="photo20.jpg" loading="lazy"> <img src="photo21.jpg" loading="lazy"> <img src="photo22.jpg" loading="lazy"> <img src="photo23.jpg" loading="lazy"> <img src="photo24.jpg" loading="lazy"> </div><h2 class="section-title">Стильные Барнхаусы</h2> <div class="carousel"> <img src="photo_b1.jpeg" class="active" loading="lazy"> <img src="photo_b2.jpeg" loading="lazy"> <img src="photo_b3.jpeg" loading="lazy"> <img src="photo_b4.jpeg" loading="lazy"> <img src="photo_b5.jpeg" loading="lazy"> <img src="photo_b6.jpeg" loading="lazy"> <img src="photo_b7.jpeg" loading="lazy"> <img src="photo_b8.jpeg" loading="lazy"> <img src="photo_b9.jpeg" loading="lazy"> <img src="photo_b10.jpeg" loading="lazy"> <img src="photo_b11.jpeg" loading="lazy"> <img src="photo_b12.jpeg" loading="lazy"> <img src="photo_b13.jpeg" loading="lazy"> <img src="photo_b14.jpeg" loading="lazy"> <img src="photo_b15.jpeg" loading="lazy"> <img src="photo_b16.jpeg" loading="lazy"> <img src="photo_b17.jpeg" loading="lazy"> <img src="photo_b18.jpeg" loading="lazy"> </div></div><script> // несколько каруселей на одной странице const carousels = document.querySelectorAll('.carousel'); carousels.forEach(carousel => { const slides = carousel.querySelectorAll('img'); let index = 0; setInterval(() => { slides[index].classList.remove('active'); index = (index + 1) % slides.length; slides[index].classList.add('active'); }, 5000); });
 
 
 // МЕНЮ С 12 СТРАНИЦАМИ
